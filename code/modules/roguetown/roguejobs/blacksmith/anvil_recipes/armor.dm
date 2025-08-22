@@ -677,7 +677,7 @@
 	name = "Mantle"
 	req_bar = /obj/item/ingot/iron
 	additional_items = list(/obj/item/ingot/iron)
-	created_item = /obj/item/clothing/neck/roguetown/chaincoif/chainmantle
+	created_item = /obj/item/clothing/neck/roguetown/chaincoif/chainmantle/iron
 	createditem_num = 1
 	craftdiff = 2
 
