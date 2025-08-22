@@ -116,6 +116,8 @@
 	prevent_crits = list(BCLASS_CUT, BCLASS_STAB, BCLASS_CHOP, BCLASS_BLUNT)
 	flags_inv = HIDEFACE|HIDESNOUT
 	body_parts_covered = FACE
+	body_parts_inherent = FACE
+
 	block2add = FOV_BEHIND
 	slot_flags = ITEM_SLOT_MASK|ITEM_SLOT_HIP
 	anvilrepair = /datum/skill/craft/armorsmithing
@@ -134,6 +136,7 @@
 	prevent_crits = list(BCLASS_CUT, BCLASS_STAB, BCLASS_CHOP, BCLASS_BLUNT)
 	flags_inv = HIDEFACE|HIDESNOUT
 	body_parts_covered = FACE
+	body_parts_inherent = FACE
 	block2add = FOV_BEHIND
 	slot_flags = ITEM_SLOT_MASK|ITEM_SLOT_HIP
 	experimental_onhip = TRUE
@@ -167,6 +170,7 @@
 	prevent_crits = list(BCLASS_CUT, BCLASS_STAB, BCLASS_CHOP, BCLASS_BLUNT)
 	flags_inv = HIDEFACE|HIDESNOUT
 	body_parts_covered = FACE
+	body_parts_inherent = FACE
 	block2add = FOV_BEHIND
 	slot_flags = ITEM_SLOT_MASK|ITEM_SLOT_HIP
 	experimental_onhip = TRUE
@@ -176,6 +180,7 @@
 /obj/item/clothing/mask/rogue/facemask/psydonmask
 	name = "silver mask"
 	desc = "A silver mask, forever locked in a rigor of uncontestable joy. The Order of Saint Xylix can't decide on whether it's meant to represent Psydon's 'mirthfulness,' 'theatricality,' or the unpredictable melding of both."
+	body_parts_inherent = FACE
 	icon_state = "psydonmask"
 	item_state = "psydonmask"
 
@@ -241,6 +246,7 @@
 	name = "steel mask"
 	desc = "A mask of steel which protects the eyes, nose and mouth while also obscuring the face it."
 	icon_state = "smask"
+	body_parts_inherent = FACE
 	max_integrity = 200
 	smeltresult = /obj/item/ingot/steel
 
@@ -253,6 +259,7 @@
 /obj/item/clothing/mask/rogue/facemask/steel/hound
 	name = "steel hound mask"
 	desc = "A mask of steel with a shape of a hound's muzzle which protects the eyes, nose and mouth while also obscuring the face it."
+	body_parts_inherent = FACE
 	icon_state = "smask_hound"
 
 /obj/item/clothing/mask/rogue/facemask/goldmask
@@ -332,6 +339,7 @@
 	desc = "Runes and wards, meant for daemons; the gold has somehow rusted in unnatural, impossible agony. The most prominent of these etchings is in the shape of the Naledian psycross. Armored to protect the wearer's face."
 	max_integrity = 100
 	armor = ARMOR_MASK_METAL
+	body_parts_inherent = FACE
 	prevent_crits = list(BCLASS_CUT, BCLASS_STAB, BCLASS_CHOP, BCLASS_BLUNT)
 	sellprice = 0
 

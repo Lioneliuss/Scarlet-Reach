@@ -752,6 +752,7 @@
 	desc = "An iron helmet which covers the top of the head."
 	icon_state = "skullcap"
 	body_parts_covered = HEAD|HAIR
+	body_parts_inherent = HEAD|HAIR
 	smeltresult = /obj/item/ingot/iron
 
 /obj/item/clothing/head/roguetown/helmet/horned
@@ -760,6 +761,7 @@
 	icon_state = "hornedcap"
 	max_integrity = 225
 	body_parts_covered = HEAD|HAIR
+	body_parts_inherent = HEAD|HAIR
 	smeltresult = /obj/item/ingot/iron
 
 /obj/item/clothing/head/roguetown/helmet/winged
@@ -772,6 +774,7 @@
 	worn_x_dimension = 64
 	worn_y_dimension = 64
 	body_parts_covered = HEAD|HAIR
+	body_parts_inherent = HEAD|HAIR
 
 /obj/item/clothing/head/roguetown/helmet/kettle
 	name = "kettle helmet"
@@ -779,6 +782,7 @@
 	icon_state = "kettle"
 	max_integrity = 215
 	body_parts_covered = HEAD|HAIR|EARS
+	body_parts_inherent = HEAD|HAIR|EARS
 	armor = ARMOR_HEAD_HELMET
 
 /obj/item/clothing/head/roguetown/helmet/kettle/wide
@@ -847,6 +851,7 @@
 	flags_inv = HIDEFACE|HIDESNOUT|HIDEHAIR
 	flags_cover = HEADCOVERSEYES
 	body_parts_covered = HEAD|EARS|HAIR|NOSE|EYES
+	body_parts_inherent = HEAD|EARS|HAIR|NOSE|EYES
 	block2add = FOV_BEHIND
 	smelt_bar_num = 2
 	armor = ARMOR_HEAD_HELMET_VISOR
@@ -886,6 +891,7 @@
 	name = "kulah khud"
 	desc = "A sturdy, conical helm that has served the Empire well throughout its many campaigns. It's a sight to see, thousands of these bobbing as an army marches. The only greater humiliation than losing it is losing one's medallion."
 	mob_overlay_icon = 'icons/roguetown/clothing/onmob/64x64/head.dmi'
+	body_parts_inherent = HEAD|EYES|MOUTH|NOSE
 	icon_state = "raneshen"
 	worn_x_dimension = 64
 	worn_y_dimension = 64
@@ -901,6 +907,7 @@
 	body_parts_covered = FULL_HEAD
 	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR|HIDESNOUT
 	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH
+	body_parts_inherent = HEAD|EYES|MOUTH|NOSE|EARS
 	block2add = FOV_BEHIND
 	smeltresult = /obj/item/ingot/steel
 	smelt_bar_num = 2
@@ -938,6 +945,7 @@
 	item_state = "barbute"
 	flags_inv = HIDEEARS|HIDEFACE|HIDESNOUT
 	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH
+	body_parts_inherent = HEAD|EYES|MOUTH|NOSE|EARS
 	armor = ARMOR_HEAD_HELMET_VISOR
 	prevent_crits = list(BCLASS_CUT, BCLASS_STAB, BCLASS_CHOP, BCLASS_BLUNT, BCLASS_SMASH, BCLASS_TWIST, BCLASS_PICK)
 	block2add = FOV_BEHIND
@@ -998,6 +1006,7 @@
 	mob_overlay_icon = 'icons/roguetown/clothing/onmob/64x64/head.dmi'
 	desc = "All that glitters is not gold,"
 	flags_inv = HIDEEARS|HIDEFACE|HIDESNOUT|HIDEHAIR|HIDEFACIALHAIR
+	body_parts_inherent = HEAD|EYES|MOUTH|NOSE|EARS
 	icon_state = "matthioshelm"
 	max_integrity = 600
 	worn_x_dimension = 64
@@ -1033,6 +1042,7 @@
 	name = "darksteel barbute"
 	desc = "A darksteel barbute. This one has an adjustable visor. Called forth from the edge of what should be known. In Her name."
 	adjustable = CAN_CADJUST
+	body_parts_inherent = HEAD|EYES|MOUTH|NOSE|EARS
 	icon_state = "zizobarbute"
 	max_integrity = 600
 	peel_threshold = 4
@@ -1047,11 +1057,13 @@
 		desc = "A darksteel froggemund. Called forth from the edge of what should be known. In Her name."
 		flags_inv = HIDEFACE|HIDESNOUT|HIDEEARS
 		body_parts_covered = HEAD|EARS|HAIR
+		body_parts_inherent = HEAD|EYES|MOUTH|NOSE|EARS
 		adjustable = CANT_CADJUST
 	else
 		icon_state = "zizobarbute"
 		name = "darksteel barbute"
 		desc = "A darksteel barbute. This one has an adjustable visor. Called forth from the edge of what should be known. In Her name."
+		body_parts_inherent = HEAD|EYES|MOUTH|NOSE|EARS
 		adjustable = CAN_CADJUST
 	update_icon()
 	user.update_inv_head()
@@ -1076,6 +1088,7 @@
 	icon_state = "guardhelm"
 	emote_environment = 3
 	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR|HIDESNOUT
+	body_parts_inherent = HEAD|EYES|MOUTH|NOSE|EARS
 	block2add = FOV_BEHIND
 	smeltresult = /obj/item/ingot/steel
 	smelt_bar_num = 2
@@ -1100,6 +1113,7 @@
 	icon_state = "gatehelm"
 	emote_environment = 3
 	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR|HIDESNOUT
+	body_parts_inherent = HEAD|EYES|MOUTH|NOSE|EARS
 	block2add = FOV_BEHIND
 	smeltresult = /obj/item/ingot/steel
 	smelt_bar_num = 2
@@ -1112,6 +1126,7 @@
 	adjustable = CAN_CADJUST
 	emote_environment = 3
 	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR|HIDESNOUT
+	body_parts_inherent = HEAD|EYES|MOUTH|NOSE|EARS
 	block2add = FOV_BEHIND
 	max_integrity = 325
 	smeltresult = /obj/item/ingot/steel
@@ -1148,6 +1163,7 @@
 /obj/item/clothing/head/roguetown/helmet/heavy/knight/skettle
 	name = "slitted kettle helm"
 	desc = "A reinforced Eisenhut that's been extended downwards to cover the face, fully protecting the wearer but limiting his field of view. Pairs well with a bevor."
+	body_parts_inherent = HEAD|HAIR|EYES
 	icon_state = "skettle"
 	item_state = "skettle"
 	adjustable = CANT_CADJUST
@@ -1178,6 +1194,7 @@
 /obj/item/clothing/head/roguetown/helmet/heavy/knight/armet
 	name = "armet"
 	desc = "Holy lamb, sacrificial hero, blessed idiot - The ten endures. Will you endure alongside them, as a knight of humenity, or crumble before temptation?"
+	body_parts_inherent = HEAD|EYES|MOUTH|NOSE|EARS
 	icon_state = "armet"
 
 /obj/item/clothing/head/roguetown/helmet/heavy/knight/armet/ComponentInitialize()
@@ -1241,6 +1258,7 @@
 	max_integrity = 335
 	emote_environment = 3
 	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR|HIDESNOUT
+	body_parts_inherent = HEAD|EYES|MOUTH|NOSE|EARS
 	block2add = FOV_BEHIND
 	smeltresult = /obj/item/ingot/steel
 	smelt_bar_num = 2
@@ -1274,6 +1292,7 @@
 	item_state = "xylixhelmet"
 	emote_environment = 3
 	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR|HIDESNOUT
+	body_parts_inherent = HEAD|EYES|MOUTH|NOSE|EARS
 	block2add = FOV_BEHIND
 	smeltresult = /obj/item/ingot/steel
 	smelt_bar_num = 2
@@ -1289,6 +1308,7 @@
 	item_state = "astratahelm"
 	emote_environment = 3
 	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR|HIDESNOUT
+	body_parts_inherent = HEAD|EYES|MOUTH|NOSE|EARS
 	block2add = FOV_BEHIND
 	smeltresult = /obj/item/ingot/steel
 	smelt_bar_num = 2
@@ -1299,6 +1319,7 @@
 	icon_state = "psydonbarbute"
 	item_state = "psydonbarbute"
 	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR|HIDESNOUT
+	body_parts_inherent = HEAD|EYES|MOUTH|NOSE|EARS
 	smeltresult = /obj/item/ingot/silver
 	smelt_bar_num = 1
 
@@ -1316,6 +1337,7 @@
 	icon_state = "psydonarmet"
 	item_state = "psydonarmet"
 	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR|HIDESNOUT
+	body_parts_inherent = HEAD|EYES|MOUTH|NOSE|EARS
 	adjustable = CAN_CADJUST
 	smeltresult = /obj/item/ingot/silver
 	smelt_bar_num = 1
@@ -1376,6 +1398,7 @@
 	item_state = "nochelm"
 	emote_environment = 3
 	body_parts_covered = HEAD|HAIR|EARS
+	body_parts_inherent = HEAD|EYES|MOUTH|NOSE|EARS
 	flags_inv = HIDEEARS|HIDEHAIR
 	block2add = FOV_BEHIND
 	smeltresult = /obj/item/ingot/steel
@@ -1388,6 +1411,7 @@
 	item_state = "necrahelm"
 	emote_environment = 3
 	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR|HIDESNOUT
+	body_parts_inherent = HEAD|EYES|MOUTH|NOSE|EARS
 	block2add = FOV_BEHIND
 	smeltresult = /obj/item/ingot/steel
 	smelt_bar_num = 2
@@ -1399,6 +1423,7 @@
 	item_state = "dendorhelm"
 	emote_environment = 3
 	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR|HIDESNOUT
+	body_parts_inherent = HEAD|EYES|MOUTH|NOSE|EARS
 	block2add = FOV_BEHIND
 	smeltresult = /obj/item/ingot/steel
 	smelt_bar_num = 2
@@ -1410,6 +1435,7 @@
 	item_state = "abyssorgreathelm"
 	emote_environment = 3
 	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR|HIDESNOUT
+	body_parts_inherent = HEAD|EYES|MOUTH|NOSE|EARS
 	block2add = FOV_BEHIND
 	smeltresult = /obj/item/ingot/steel
 	smelt_bar_num = 2
@@ -1421,6 +1447,7 @@
 	item_state = "ravoxhelmet"
 	emote_environment = 3
 	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR|HIDESNOUT
+	body_parts_inherent = HEAD|EYES|MOUTH|NOSE|EARS
 	block2add = FOV_BEHIND
 	smeltresult = /obj/item/ingot/steel
 	smelt_bar_num = 2
@@ -1446,6 +1473,7 @@
 	item_state = "bascinet_novisor"
 	emote_environment = 3
 	body_parts_covered = HEAD|HAIR|EARS
+	body_parts_inherent = HEAD|HAIR|EARS
 	flags_inv = HIDEEARS|HIDEHAIR
 	block2add = FOV_BEHIND
 	max_integrity = 250
@@ -1462,6 +1490,7 @@
 	body_parts_covered = FULL_HEAD
 	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR|HIDESNOUT
 	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH
+	body_parts_inherent = HEAD|EYES|MOUTH|NOSE|EARS
 	block2add = FOV_BEHIND
 	smeltresult = /obj/item/ingot/steel
 	smelt_bar_num = 2
@@ -1494,6 +1523,7 @@
 /obj/item/clothing/head/roguetown/helmet/bascinet/pigface/hounskull
 	name = "hounskull bascinet"
 	desc = "A bascinet with a conical visor, favored by those with snouts and whiskers. Nestle a feather onto the rim to display your allegiance."
+	body_parts_inherent = HEAD|EYES|MOUTH|NOSE
 	icon_state = "bascinet"
 
 
@@ -1550,6 +1580,7 @@
 	body_parts_covered = FULL_HEAD
 	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR|HIDESNOUT
 	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH
+	body_parts_inherent = HEAD|EYES|MOUTH|NOSE|EARS
 	block2add = FOV_BEHIND
 	smeltresult = /obj/item/ingot/steel
 	smelt_bar_num = 2
@@ -1586,6 +1617,7 @@
 	item_state = "frogmouth"
 	emote_environment = 3
 	body_parts_covered = FULL_HEAD|NECK
+	body_parts_inherent = FULL_HEAD|NECK
 	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR
 	block2add = FOV_RIGHT|FOV_LEFT
 	max_integrity = 450
@@ -1744,6 +1776,7 @@
 //............... Eora Helmet ............... //
 /obj/item/clothing/head/roguetown/helmet/sallet/eoran
 	name = "eora helmet"
+	body_parts_inherent = HEAD|EYES|MOUTH|NOSE|EARS
 	desc = "A simple yet protective helmet forged in the style typical of Eoran worshippers. Upon it lays several laurels of flowers and other colorful ornaments followed by symbols noting the accomplishments and punishments of the owner's chapter."
 	icon_state = "eorahelmsallet"
 	item_state = "eorahelmsallet"
@@ -1917,6 +1950,7 @@
 	item_state = "bplatehelm"
 	flags_inv = HIDEEARS|HIDEFACE|HIDESNOUT
 	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH
+	body_parts_inherent = HEAD|EYES|MOUTH|NOSE|EARS
 	armor = ARMOR_PLATE_BSTEEL
 	prevent_crits = list(BCLASS_CUT, BCLASS_STAB, BCLASS_CHOP, BCLASS_BLUNT, BCLASS_SMASH, BCLASS_TWIST, BCLASS_PICK)
 	block2add = FOV_BEHIND
@@ -1934,6 +1968,7 @@
 	item_state = "bkhelm"
 	flags_inv = HIDEEARS|HIDEFACE|HIDESNOUT
 	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH
+	body_parts_inherent = HEAD|EYES|MOUTH|NOSE|EARS
 	armor = ARMOR_PLATE_BSTEEL
 	prevent_crits = list(BCLASS_CUT, BCLASS_STAB, BCLASS_CHOP, BCLASS_BLUNT, BCLASS_SMASH, BCLASS_TWIST, BCLASS_PICK)
 	block2add = FOV_BEHIND
@@ -2006,6 +2041,7 @@
 	emote_environment = 3
 	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR|HIDESNOUT
 	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH
+	body_parts_inherent = HEAD|EYES|MOUTH|NOSE|EARS
 	block2add = FOV_BEHIND
 	smeltresult = /obj/item/ingot/steel
 
@@ -2036,6 +2072,7 @@
 	prevent_crits = list(BCLASS_BLUNT, BCLASS_SMASH, BCLASS_TWIST, BCLASS_PICK)
 	icon = 'icons/roguetown/clothing/special/race_armor.dmi'
 	mob_overlay_icon = 'icons/roguetown/clothing/special/onmob/race_armor.dmi'
+	body_parts_inherent = HEAD|EYES|MOUTH|HEAD|EARS
 	icon_state = "welfhead"
 	item_state = "welfhead"
 	block2add = FOV_BEHIND
@@ -2057,6 +2094,7 @@
 	body_parts_covered = HEAD|HAIR|NOSE
 	flags_inv = HIDEEARS|HIDEFACE|HIDESNOUT
 	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH
+	body_parts_inherent = HEAD|EYES|MOUTH|EARS
 	icon_state = "elven_barbute_full"
 	item_state = "elven_barbute_full"
 	armor = ARMOR_HEAD_HELMET
@@ -2072,7 +2110,7 @@
 
 /obj/item/clothing/head/roguetown/helmet/bascinet/antler
 	name = "wardens's helmet"
-	desc = "A strange helmet adorned with antlers worn by the warden of the forest."
+	desc = "A strange helmet adorned with antlers worn by the wardens of the forest."
 	icon = 'icons/roguetown/clothing/special/warden.dmi'
 	mob_overlay_icon = 'icons/roguetown/clothing/special/onmob/warden64.dmi'
 	bloody_icon = 'icons/effects/blood64.dmi'
@@ -2082,15 +2120,13 @@
 	worn_y_dimension = 64
 	body_parts_covered = FULL_HEAD
 	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR|HIDESNOUT
+	body_parts_inherent = HEAD|EYES|MOUTH|HEAD|EARS
 	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH
 	block2add = FOV_BEHIND
 	smeltresult = /obj/item/ingot/steel
 	smelt_bar_num = 2
 	experimental_inhand = FALSE
 	experimental_onhip = FALSE
-
-/obj/item/clothing/head/roguetown/helmet/bascinet/antler/ComponentInitialize()
-	AddComponent(/datum/component/adjustable_clothing, (HEAD|EARS|HAIR), (HIDEEARS|HIDEHAIR), null, 'sound/items/visor.ogg', null, UPD_HEAD)	//Standard helmet
 
 //kazengite update
 /obj/item/clothing/head/roguetown/mentorhat
@@ -2099,7 +2135,7 @@
 	icon_state = "easthat"
 	item_state = "easthat"
 	armor = list("blunt" = 70, "slash" = 80, "stab" = 65, "piercing" = 40, "fire" = 0, "acid" = 0)
-	prevent_crits = list(BCLASS_CUT, BCLASS_BLUNT, BCLASS_TWIST)
+	prevent_crits = list(BCLASS_CUT, BCLASS_BLUNT, BCLASS_TWIST, BCLASS_CHOP, BCLASS_BITE)
 	max_integrity = 150
 	blocksound = SOFTHIT
 	sewrepair = TRUE
