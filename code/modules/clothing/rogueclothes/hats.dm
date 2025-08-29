@@ -2356,7 +2356,7 @@
 // new ruma merc shit
 /obj/item/clothing/head/roguetown/roguehood/shalal/hijab/kazengunese
 	name = "kazengunese headwrap"
-	desc = "A cloth hood of Kazengunese origin, which fully conceans one's face. Painted black to conceal the wearer in the night"
+	desc = "A cloth hood of Kazengunese origin, which fully conceals one's face. Painted black for the wearer to blend into the night."
 	icon = 'icons/roguetown/clothing/special/ninjahood.dmi'
 	mob_overlay_icon = 'icons/roguetown/clothing/special/onmob/ninjahood.dmi'
 	icon_state = "ninjahood"
