@@ -9,6 +9,10 @@
 	traits_applied = list(TRAIT_OUTLANDER, TRAIT_OUTLAW, TRAIT_HERESIARCH)
  
 /datum/outfit/job/roguetown/wretch/atgervi/pre_equip(mob/living/carbon/human/H)
+	..()
+	if (!(istype(H.patron, /datum/patron/inhumen/zizo) || istype(H.patron, /datum/patron/inhumen/matthios) || istype(H.patron, /datum/patron/inhumen/graggar) || istype(H.patron, /datum/patron/inhumen/baotha)))
+		to_chat(H, span_warning("My former deity has abandoned me.. Graggar is my new master."))
+		H.set_patron(/datum/patron/inhumen/graggar)
 	H.set_blindness(0)
 	to_chat(H, span_warning("You are a Shaman of the Fjall, The Northern Empty. Savage combatants who commune with the Ecclesical Beast gods through ritualistic violence, rather than idle prayer."))
 	H.adjust_skillrank(/datum/skill/misc/swimming, 2, TRUE)
