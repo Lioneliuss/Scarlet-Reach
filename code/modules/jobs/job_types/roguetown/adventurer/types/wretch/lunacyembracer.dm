@@ -1,6 +1,6 @@
 /datum/advclass/wretch/lunacyembracer
 	name = "Lunacy Embracer"
-	tutorial = "You have rejected and terrorized civilization in the name of nature. You run wild under the moon, a terror to the townsfolk and a champion of Dendor's wild domain. (THIS LOCKS YOU TO DENDOR PATRON)"
+	tutorial = "You have rejected and terrorized civilization in the name of nature. You run wild under the moon, a terror to the townsfolk and a champion of Dendor's wild domain. (Dendor or Graggar patron only)"
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_ALL_KINDS
 	outfit = /datum/outfit/job/roguetown/wretch/lunacyembracer
