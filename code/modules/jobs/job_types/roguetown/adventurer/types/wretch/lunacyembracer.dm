@@ -9,7 +9,7 @@
 /datum/outfit/job/roguetown/wretch/lunacyembracer/pre_equip(mob/living/carbon/human/H)
 	if (!(istype(H.patron, /datum/patron/divine/dendor) || istype(H.patron, /datum/patron/inhumen/graggar)))
 		to_chat(H, span_warning("My former deity frowned upon my practices. I have since turned to a new god."))
-		H.set_patron(pick(/datum/patron/divine/dendor, /datum/patron/inhumen/graggar,))
+		H.set_patron(pick(/datum/patron/divine/dendor, /datum/patron/inhumen/graggar))
 
 	var/datum/devotion/C = new /datum/devotion(H, H.patron)
 	C.grant_miracles(H, cleric_tier = CLERIC_T3, passive_gain = CLERIC_REGEN_MAJOR)
