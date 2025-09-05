@@ -5,7 +5,7 @@
 	faction = "Station"
 	total_positions = 1 // THE ONE.
 	spawn_positions = 1
-	allowed_races = RACES_SECOND_CLASS_NO_GOLEM
+	allowed_races = RACES_NOBILITY_ELIGIBLE_UP
 	disallowed_races = list(
 		/datum/species/lamia,
 	)

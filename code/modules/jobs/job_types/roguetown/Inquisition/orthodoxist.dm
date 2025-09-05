@@ -5,7 +5,7 @@
 	faction = "Station"
 	total_positions = 3 // THREE GOONS!!
 	spawn_positions = 3
-	allowed_races = RACES_SECOND_CLASS_NO_GOLEM
+	allowed_races = RACES_NOBILITY_ELIGIBLE_UP
 	disallowed_races = list(
 		/datum/species/lamia,
 	)

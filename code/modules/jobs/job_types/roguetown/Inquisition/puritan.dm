@@ -6,7 +6,7 @@
 	total_positions = 1
 	spawn_positions = 1
 	allowed_sexes = list(MALE, FEMALE)
-	allowed_races = RACES_SECOND_CLASS_NO_GOLEM		//Not been around long enough to be inquisitor, brand new race to the world.
+	allowed_races = RACES_NOBILITY_ELIGIBLE_UP	//Only the superior races, as Psydon intended
 	disallowed_races = list(
 		/datum/species/lamia,
 	)
