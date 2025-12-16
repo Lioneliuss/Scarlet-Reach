@@ -41,6 +41,7 @@
 	beltr = /obj/item/cooking/pan
 	shoes = /obj/item/clothing/shoes/roguetown/boots/ogre
 	neck = /obj/item/storage/belt/rogue/pouch/coins/poor
+	cloak = /obj/item/clothing/cloak/apron/ogre
 
 	backpack_contents = list(
 						/obj/item/kitchen/spoon,
